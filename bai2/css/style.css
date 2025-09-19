@@ -1,0 +1,240 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  background: #000;
+  color: white;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.logo span {
+  color: #00ff88;
+  margin-right: 5px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #00ff88;
+}
+
+.banner {
+  position: relative;
+  height: 900px;
+  background: url("../img/thelast.webp") no-repeat center center / cover;
+  display: flex;
+  align-items: flex-end;
+  padding: 100px 50px;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 20%,
+    rgba(0, 0, 0, 0.2) 80%
+  );
+}
+
+.banner-content {
+  position: relative;
+  max-width: 600px;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.banner h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.info {
+  font-size: 15px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background: #00ff88;
+  border: none;
+  color: black;
+}
+
+.second_container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Story */
+.box_story h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.story_content {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Top cast */
+.top-cast {
+  color: white;
+  padding: 20px 0;
+}
+
+.top-cast h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cast-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.cast {
+  text-align: center;
+  width: 120px;
+  flex-shrink: 0;
+}
+
+.cast img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #333;
+}
+
+.cast h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.cast p {
+  font-size: 12px;
+  color: #aaa;
+  margin: 0;
+}
+
+.box_episode {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 0 20px 40px;
+}
+
+.episode {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.episode:hover {
+  transform: scale(1.05);
+}
+
+.episode img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.episode-title {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
