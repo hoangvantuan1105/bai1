@@ -63,7 +63,7 @@ nav ul li a:hover {
 .banner {
   position: relative;
   height: 900px;
-  background: url("../img/thelast.webp") no-repeat center center / cover;
+  background: url("../img/banner.jpg") no-repeat center center / cover;
   display: flex;
   align-items: flex-end;
   padding: 100px 50px;
@@ -130,7 +130,6 @@ nav ul li a:hover {
   color: white;
   transition: 0.3s;
 }
-
 .btn.primary {
   background: #00ff88;
   border: none;
@@ -237,4 +236,31 @@ nav ul li a:hover {
   border-radius: 5px;
   text-align: center;
   color: white;
+}
+/* recomment_movie */
+.box_recomment_film {
+  width: 300px;
+  height: 250px;
+}
+.box_recomment_film img {
+  border-radius: 10px;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+.box_img_recomment_film {
+  overflow: hidden;
+}
+.movie_rating {
+  display: flex;
+  gap: 10px;
+}
+.movie_rating span {
+  color: #ccc;
+}
+:hover.box_recomment_film img {
+  transform: scale(1.2);
+}
+.grid_recomment_film {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
